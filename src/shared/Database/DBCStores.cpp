@@ -401,17 +401,21 @@ void LoadDBCStores(std::string dataPath)
     }
 
     // check at up-to-date DBC files (47653 is last added spell in 2.4.1/2.4.2)
+	// wotlk added spell is 53085
     // check at up-to-date DBC files (17004 is last ID in SkillLineAbilities in 2.4.2)
+	// 17514 in wotlk
     // check at up-to-date DBC files (598 is last map added in 2.4.1/2.4.2)
     // check at up-to-date DBC files (1041 is last gem property added in 2.4.2)
+	// 1127 in wotlk 8334
     // check at up-to-date DBC files (2406 is last item extended cost added in 2.4.2)
+	// 2425 in wotlk
     // check at up-to-date DBC files (71 is last char title added in 2.4.2)
     // check at up-to-date DBC files (1768 is last area added in 2.4.1/2.4.2)
-    if( !sSpellStore.LookupEntry(47653)            || 
-        !sSkillLineAbilityStore.LookupEntry(17004) || 
+    if( !sSpellStore.LookupEntry(53085)            || 
+        !sSkillLineAbilityStore.LookupEntry(17514) || 
         !sMapStore.LookupEntry(598)                ||
-        !sGemPropertiesStore.LookupEntry(1041)     || 
-        !sItemExtendedCostStore.LookupEntry(2406)  || 
+        !sGemPropertiesStore.LookupEntry(1127)     || 
+        !sItemExtendedCostStore.LookupEntry(2425)  || 
         !sCharTitlesStore.LookupEntry(71)          ||
         !sAreaStore.LookupEntry(1768)              )
     {
